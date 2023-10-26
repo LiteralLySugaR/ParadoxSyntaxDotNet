@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34114.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParadoxSyntaxDotNet", "ParadoxSyntaxDotNet.csproj", "{EBF2698F-A60B-4BC1-9E1A-69CB040272D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBF2698F-A60B-4BC1-9E1A-69CB040272D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF2698F-A60B-4BC1-9E1A-69CB040272D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF2698F-A60B-4BC1-9E1A-69CB040272D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF2698F-A60B-4BC1-9E1A-69CB040272D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B581A51-9D79-4B5D-9F85-D7CF43D8CA0F}
+	EndGlobalSection
+EndGlobal
