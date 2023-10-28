@@ -18,8 +18,6 @@ namespace ParadoxSyntaxDotNet
 
         public string ModName;
 
-        public string ParadoxSyntaxDotNetVersion;
-
         public enum SyntaxEnumerator
         {
             HeartsOfIron4
@@ -37,18 +35,7 @@ namespace ParadoxSyntaxDotNet
 
             ModName = Params[4];
 
-            ParadoxSyntaxDotNetVersion = Params[5];
-
             if (!typeof(SyntaxEnumerator).GetEnumNames().Contains(Syntax)) { Syntax = ((SyntaxEnumerator)0).ToString(); }
-        }
-
-        public void EncodeCall(object EncodingTarget)
-        {
-            // line 0 - descriptor.mod info
-            // line 1 - /common/ info
-            // line 2 - /events/ info
-            // line 3 - /history/ info
-            // line 4 - /localisation/ info
         }
     }
 }

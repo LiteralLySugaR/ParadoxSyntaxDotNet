@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ParadoxSyntaxDotNet.Syntax
 {
-    public class Global
+    public class Functions
     {
-        public class Tag : Global
-        { 
-            public string TAG;
+        public class Always : Functions
+        {
+            public bool DoAlways;
         }
     }
 }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ParadoxSyntaxDotNet.Syntax.Triggers
+namespace ParadoxSyntaxDotNet
 {
-    public class Always
+    public class CoderOutput
     {
-        public bool Do;
+
     }
 }
