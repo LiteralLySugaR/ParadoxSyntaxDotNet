@@ -8,8 +8,21 @@ namespace ParadoxSyntaxDotNet.Syntax
 {
     public class Global
     {
-        public class Field 
-        { public static object Value = null; }
+        public class Comparer
+        {
+            public readonly static string VarIsLower = "<";
+
+            public readonly static string VarIsEquals = "=";
+
+            public readonly static string VarIsGreater = ">";
+        }
+
+        public class Field : Global
+        { 
+            public static object Value = null;
+
+            public static string StrComparer;
+        }
 
         public static Field Year;
 

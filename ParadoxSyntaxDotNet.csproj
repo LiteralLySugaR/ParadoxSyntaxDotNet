@@ -10,7 +10,7 @@
     <RootNamespace>ParadoxSyntaxDotNet</RootNamespace>
     <AssemblyName>ParadoxSyntaxDotNet</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-	<langVersion>9.0</langVersion>
+    <langVersion>9.0</langVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -45,6 +45,9 @@
     <Compile Include="CoderOutput.cs" />
     <Compile Include="Innit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Syntax\FileStructure.cs" />
+    <Compile Include="Syntax\FunctionClasses.cs" />
+    <Compile Include="Syntax\Functions.cs" />
     <Compile Include="Syntax\Global.cs" />
     <Compile Include="Syntax\Types.cs" />
   </ItemGroup>
