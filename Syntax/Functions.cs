@@ -8,9 +8,38 @@ namespace ParadoxSyntaxDotNet.Syntax
 {
     public class Functions
     {
-        public class Always : Functions
+        public class Statements
         {
-            public bool DoAlways;
+            public class If 
+            { public Limit Limit; public object[] Functions; }
+
+            public class ElseIf 
+            { public Limit Limit; public object[] Functions; }
+
+            public class Else 
+            { public object[] Functions; }
+
+            public class Limit 
+            { public object[] Triggers; }
+        }
+
+        public class Triggers
+        {
+            public class Always
+            {  public bool Self; }
+
+            public class AllCountries
+            { public object[] Triggers; }
+        }
+
+        public class Modifiers
+        {
+
+        }
+
+        public class Effects
+        {
+
         }
     }
 }
