@@ -18,12 +18,14 @@ namespace ParadoxSyntaxDotNet
 
         public string ModName;
 
+        public string[] ReplacePath;
+
         public enum SyntaxEnumerator
         {
             HeartsOfIron4
         }
 
-        public Innit(string[] Params)
+        public Innit(string[] Params, string[] replacePaths)
         {
             Syntax = Params[0];
 
@@ -34,6 +36,8 @@ namespace ParadoxSyntaxDotNet
             ModVersion = Params[3];
 
             ModName = Params[4];
+
+            ReplacePath = replacePaths;
 
             if (!typeof(SyntaxEnumerator).GetEnumNames().Contains(Syntax)) { Syntax = ((SyntaxEnumerator)0).ToString(); }
         }

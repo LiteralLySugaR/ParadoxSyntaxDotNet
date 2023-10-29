@@ -10,11 +10,11 @@ namespace ParadoxSyntaxDotNet.Syntax
     {
         public class Comparer
         {
-            public readonly static string VarIsLower = "<";
+            public static string VarIsGreater { get; } = "<";
 
-            public readonly static string VarIsEquals = "=";
+            public static string VarIsEquals { get; } = "=";
 
-            public readonly static string VarIsGreater = ">";
+            public static string VarIsLower { get; } = ">";
         }
 
         public class Field : Global
@@ -24,24 +24,24 @@ namespace ParadoxSyntaxDotNet.Syntax
             public static string StrComparer;
         }
 
-        public static Field Year;
+        public static Field Year { get; }
 
-        public static Field Date;
+        public static Field Date { get; }
 
-        public static Field NumDays;
+        public static Field NumDays { get; }
 
-        public static Field Difficulty;
+        public static Field Difficulty { get; }
 
-        public static Field Threat;
+        public static Field Threat { get; }
 
-        public static Field Id;
+        public static Field Id { get; }
 
-        public static Field MaxManpower;
+        public static Field MaxManpower { get; }
 
-        public static Field MaxManpowerK;
+        public static Field MaxManpowerK { get; }
 
-        public static Field CurrentPartyIdeologyGroup;
+        public static Field CurrentPartyIdeologyGroup { get; }
 
-        public static Field OriginalTag;
+        public static Field OriginalTag { get; }
     }
 }

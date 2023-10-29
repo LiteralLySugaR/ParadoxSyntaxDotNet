@@ -9,7 +9,7 @@ namespace ParadoxSyntaxDotNet.Syntax
     public class Types
     {
         public class GuiTypes
-        { public GuiType[] Guis; }
+        { public GuiType[] Guis; public readonly string FuncName = "GuiTypes"; }
 
         public class GuiType
         {
@@ -18,6 +18,8 @@ namespace ParadoxSyntaxDotNet.Syntax
             public string TextureDefine;
 
             public int NumberOfFrames;
+
+            public readonly string FuncName = "GuiType";
         }
 
         public class DecisionCategory
@@ -41,15 +43,22 @@ namespace ParadoxSyntaxDotNet.Syntax
 
             public VisiblityTypes VisiblityType;
 
-            public FunctionClasses.Allowed Allowed;
+            public FunctionClasses.Decision.Allowed Allowed;
 
-            public FunctionClasses.Available Available;
+            public FunctionClasses.Decision.Available Available;
 
-            public FunctionClasses.Visible Visible;
+            public FunctionClasses.Decision.Visible Visible;
+
+            public DecisionCategory(string name)
+            { NameDefine = name; FuncName = NameDefine; }
+
+            public readonly string FuncName;
         }
 
         public class Decision
         {
+            public string NameDefine;
+
             public int Priority;
 
             public int DaysRemove;
@@ -78,31 +87,36 @@ namespace ParadoxSyntaxDotNet.Syntax
 
             public string TargetArray;
 
-            public FunctionClasses.TargetRootTrigger TargetRootTrigger;
+            public FunctionClasses.Decision.TargetRootTrigger TargetRootTrigger;
 
-            public FunctionClasses.Targets Targets;
+            public FunctionClasses.Decision.Targets Targets;
 
-            public FunctionClasses.TargetTrigger TargetTrigger;
+            public FunctionClasses.Decision.TargetTrigger TargetTrigger;
 
-            public FunctionClasses.CustomCostTrigger CustomCostTrigger;
+            public FunctionClasses.Decision.CustomCostTrigger CustomCostTrigger;
 
-            public FunctionClasses.Modifier Modifier;
+            public FunctionClasses.Decision.Modifier Modifier;
 
-            public FunctionClasses.Allowed Allowed;
+            public FunctionClasses.Decision.Allowed Allowed;
 
-            public FunctionClasses.Available Available;
+            public FunctionClasses.Decision.Available Available;
 
-            public FunctionClasses.Visible Visible;
+            public FunctionClasses.Decision.Visible Visible;
 
-            public FunctionClasses.TimeoutEffect TimeoutEffect;
+            public FunctionClasses.Decision.TimeoutEffect TimeoutEffect;
 
-            public FunctionClasses.CompleteEffect CompleteEffect;
+            public FunctionClasses.Decision.CompleteEffect CompleteEffect;
 
-            public FunctionClasses.RemoveEffect RemoveEffect;
+            public FunctionClasses.Decision.RemoveEffect RemoveEffect;
 
-            public FunctionClasses.CancelTrigger CancelTrigger;
+            public FunctionClasses.Decision.CancelTrigger CancelTrigger;
 
-            public FunctionClasses.CancelEffect CancelEffect;
+            public FunctionClasses.Decision.CancelEffect CancelEffect;
+
+            public Decision(string name)
+            { NameDefine = name; FuncName = NameDefine; }
+
+            public readonly string FuncName;
         }
     }
 }
