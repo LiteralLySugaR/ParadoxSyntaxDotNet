@@ -10,11 +10,11 @@ namespace ParadoxSyntaxDotNet.Syntax
     {
         public class MethodComparer
         {
-            public static string VarIsGreater { get; } = "<";
+            public static string RightIsGreater { get; } = "<";
 
-            public static string VarIsEquals { get; } = "=";
+            public static string IsEquals { get; } = "=";
 
-            public static string VarIsLower { get; } = ">";
+            public static string RightIsLower { get; } = ">";
         }
 
         public class DLC

@@ -179,6 +179,8 @@ namespace ParadoxSyntaxDotNet.Syntax
             { public Effect Effect; public readonly string FuncName = "on_release_as_puppet"; }
 
             public object[] SelfFunctions;
+
+            public readonly string FuncName = "on_actions";
         }
     }
 }
