@@ -8,7 +8,7 @@ namespace ParadoxSyntaxDotNet.Syntax
 {
     public class Global
     {
-        public class Comparer
+        public class MethodComparer
         {
             public static string VarIsGreater { get; } = "<";
 
@@ -17,31 +17,38 @@ namespace ParadoxSyntaxDotNet.Syntax
             public static string VarIsLower { get; } = ">";
         }
 
-        public class Field : Global
-        { 
-            public static object Value = null;
+        public class DLC
+        {
+            public static string ArmsAgainstTyranny { get; } = "Arms Against Tyranny";
 
-            public static string StrComparer;
+            public static string ByBloodAlone { get; } = "By Blood Alone";
+
+            public static string NoStepBack { get; } = "No Step Back";
+
+            public static string BattleForTheBosporus { get; } = "Battle for the Bosporus";
+
+            public static string ManTheGuns { get; } = "Man the Guns";
+
+            public static string DeathOrDishonor { get; } = "Death or Dishonor";
+
+            public static string TogetherForVictory { get; } = "Together for Victory";
+
+            public static string LaResistance { get; } = "La Resistance";
+
+            public static string WakingTheTiger { get; } = "Waking the Tiger";
         }
 
-        public static Field Year { get; }
+        public class VariableComparer
+        {
+            public static string VarLessThan { get; } = "less_than";
 
-        public static Field Date { get; }
+            public static string VarLessThanOrEquals { get; } = "less_than_or_equals";
 
-        public static Field NumDays { get; }
+            public static string VarEquals { get; } = "equals";
 
-        public static Field Difficulty { get; }
+            public static string VarGreaterThanOrEquals { get; } = "greater_than_or_equals";
 
-        public static Field Threat { get; }
-
-        public static Field Id { get; }
-
-        public static Field MaxManpower { get; }
-
-        public static Field MaxManpowerK { get; }
-
-        public static Field CurrentPartyIdeologyGroup { get; }
-
-        public static Field OriginalTag { get; }
+            public static string VarGreaterThan { get; } = "greater_than";
+        }
     }
 }

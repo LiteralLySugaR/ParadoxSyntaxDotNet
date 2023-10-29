@@ -10,7 +10,7 @@ namespace ParadoxSyntaxDotNet.Syntax
     {
         public class Decision
         {
-            public sealed class Activation : Functions.Triggers
+            public class Activation : Functions
             { public object[] Functions; public readonly string FuncName = "activation"; }
 
             public class TargetRootTrigger : Functions
@@ -55,13 +55,13 @@ namespace ParadoxSyntaxDotNet.Syntax
 
         public class OnActions
         {
-            public class Effect 
+            public class Effect : Functions
             { public object[] Functions; public readonly string FuncName = "effect"; }
 
             public class OnStartup
             { public Effect Effect; public readonly string FuncName = "on_startup"; }
 
-            public class OnDaily
+            public class OnDaily : Functions
             {
                 public string Tag { get; }
 
@@ -75,7 +75,7 @@ namespace ParadoxSyntaxDotNet.Syntax
                 public readonly string FuncName = "on_daily";
             }
 
-            public class OnWeekly
+            public class OnWeekly : Functions
             {
                 public string Tag { get; }
 
@@ -89,7 +89,7 @@ namespace ParadoxSyntaxDotNet.Syntax
                 public readonly string FuncName = "on_weekly";
             }
 
-            public class OnMonthly
+            public class OnMonthly : Functions
             {
                 public string Tag { get; }
 
@@ -103,79 +103,79 @@ namespace ParadoxSyntaxDotNet.Syntax
                 public readonly string FuncName = "on_monthly";
             }
 
-            public class OnNukeDrop
+            public class OnNukeDrop : Functions
             { public Effect Effect; public readonly string FuncName = "on_nuke_drop"; }
 
-            public class OnPrideOfTheFleetSunk
+            public class OnPrideOfTheFleetSunk : Functions
             { public Effect Effect; public readonly string FuncName = "on_pride_of_the_fleet_sunk"; }
 
-            public class OnNavalInvasion
+            public class OnNavalInvasion : Functions
             { public Effect Effect; public readonly string FuncName = "on_naval_invasion"; }
 
-            public class OnParadrop
+            public class OnParadrop : Functions
             { public Effect Effect; public readonly string FuncName = "on_paradrop"; }
 
-            public class OnCoupSucceeded
+            public class OnCoupSucceeded : Functions
             { public Effect Effect; public readonly string FuncName = "on_coup_succeeded"; }
 
-            public class OnGovernmentChange
+            public class OnGovernmentChange : Functions
             { public Effect Effect; public readonly string FuncName = "on_government_change"; }
 
-            public class OnRulingPartyChange
+            public class OnRulingPartyChange : Functions
             { public Effect Effect; public readonly string FuncName = "on_ruling_party_change"; }
 
-            public class OnNewTermElection
+            public class OnNewTermElection : Functions
             { public Effect Effect; public readonly string FuncName = "on_new_term_election"; }
 
-            public class OnPeaceconferenceEnded
+            public class OnPeaceconferenceEnded : Functions
             { public Effect Effect; public readonly string FuncName = "on_peaceconference_ended"; }
 
-            public class OnPeaceconferenceStarted
+            public class OnPeaceconferenceStarted : Functions
             { public Effect Effect; public readonly string FuncName = "on_peaceconference_started"; }
 
-            public class OnSendVolunteers
+            public class OnSendVolunteers : Functions
             { public Effect Effect; public readonly string FuncName = "on_send_volunteers"; }
 
-            public class OnBorderWarLost
+            public class OnBorderWarLost : Functions
             { public Effect Effect; public readonly string FuncName = "on_border_war_lost"; }
 
-            public class OnWarRelationAdded
+            public class OnWarRelationAdded : Functions
             { public Effect Effect; public readonly string FuncName = "on_war_relation_added"; }
 
-            public class OnDeclareWar
+            public class OnDeclareWar : Functions
             { public Effect Effect; public readonly string FuncName = "on_declare_war"; }
 
-            public class OnWar
+            public class OnWar : Functions
             { public Effect Effect; public readonly string FuncName = "on_war"; }
 
-            public class OnPeace
+            public class OnPeace : Functions
             { public Effect Effect; public readonly string FuncName = "on_peace"; }
 
-            public class OnCapitulation
+            public class OnCapitulation : Functions
             { public Effect Effect; public readonly string FuncName = "on_capitulation"; }
 
-            public class OnUncapitulation
+            public class OnUncapitulation : Functions
             { public Effect Effect; public readonly string FuncName = "on_uncapitulation"; }
 
-            public class OnAnnex
+            public class OnAnnex : Functions
             { public Effect Effect; public readonly string FuncName = "on_annex"; }
 
-            public class OnCivilWarEndBeforeAnnexation
+            public class OnCivilWarEndBeforeAnnexation : Functions
             { public Effect Effect; public readonly string FuncName = "on_civil_war_end_before_annexation"; }
 
-            public class OnCivilWarEnd
+            public class OnCivilWarEnd : Functions
             { public Effect Effect; public readonly string FuncName = "on_civil_war_end"; }
 
-            public class OnPuppet
+            public class OnPuppet : Functions
             { public Effect Effect; public readonly string FuncName = "on_puppet"; }
 
-            public class OnLiberate
+            public class OnLiberate : Functions
             { public Effect Effect; public readonly string FuncName = "on_liberate"; }
 
-            public class OnReleaseAsFree
+            public class OnReleaseAsFree : Functions
             { public Effect Effect; public readonly string FuncName = "on_release_as_free"; }
 
-            public class OnReleaseAsPuppet
+            public class OnReleaseAsPuppet : Functions
             { public Effect Effect; public readonly string FuncName = "on_release_as_puppet"; }
 
             public object[] SelfFunctions;
